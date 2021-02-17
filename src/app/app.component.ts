@@ -19,10 +19,10 @@ export class AppComponent {
   zoom!: number;
   address!: string;
   private geoCoder: any;
-  
+
+ 
   @ViewChild('search')
   public searchElementRef!: ElementRef;
-  
   constructor(
     private mapsAPILoader: MapsAPILoader,
     private ngZone: NgZone
@@ -114,8 +114,12 @@ export class AppComponent {
   
     });
   }
+ 
+   
 
   }
+
+  
 
 
   
