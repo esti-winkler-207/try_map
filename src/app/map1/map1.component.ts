@@ -1,5 +1,6 @@
 import { Component, ElementRef, NgZone, OnInit, ViewChild } from '@angular/core';
 import { AgmCoreModule, MapsAPILoader } from '@agm/core';
+declare var google: any;
 @Component({
   selector: 'app-map1',
   templateUrl: './map1.component.html',
