@@ -9,6 +9,7 @@ import { Map3Component } from './map3/map3.component';
 import { Map4Component } from './map4/map4.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { Map5Component } from './map5/map5.component';
+import { Map6Component } from './map6/map6.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { Map5Component } from './map5/map5.component';
     Map1Component,
     Map3Component,
     Map4Component,
-    Map5Component
+    Map5Component,
+    Map6Component
   ],
   imports: [
     BrowserModule,

@@ -21,21 +21,21 @@ infowindow!: any;
     });
     this.infowindow = new google.maps.InfoWindow();
   }
-  getallstores(latitude:number,longitude:number){
-    var service = new google.maps.places.PlacesService(this.map);
-    service.nearbySearch({
-      location: {lat: latitude, lng: longitude},
-      radius: 1000,
-      type: 'store'
-    }, (results: string | any[],status: any) => {
-      if (status === google.maps.places.PlacesServiceStatus.OK) {
-        for (var i = 0; i < results.length; i++) {
-          // this.createMarker(results[i]);
-          console.log(results[i])
-        }
-      }
-    });
-  } 
+  // getallstores(latitude:number,longitude:number){
+  //   var service = new google.maps.places.PlacesService(this.map);
+  //   service.nearbySearch({
+  //     location: {lat: latitude, lng: longitude},
+  //     radius: 1000,
+  //     type: 'store'
+  //   }, (results: string | any[],status: any) => {
+  //     if (status === google.maps.places.PlacesServiceStatus.OK) {
+  //       for (var i = 0; i < results.length; i++) {
+  //         // this.createMarker(results[i]);
+  //         console.log(results[i])
+  //       }
+  //     }
+  //   });
+  // } 
   // createMarker(place:any) {
   //   var placeLoc = place.geometry.location;
   //   var marker = new google.maps.Marker({
